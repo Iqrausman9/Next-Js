@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define root variables for light and dark themes */
+:root {
+  --background: #ffffff; /* Light background color */
+  --foreground: #171717; /* Light text color */
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a; /* Dark background color */
+    --foreground: #ededed; /* Light text color for dark mode */
+  }
+}
+
+/* Body styles */
+body {
+  color: var(--foreground); /* Set text color */
+  background: var(--background); /* Set background color */
+  font-family: Arial, Helvetica, sans-serif; /* Set font family */
+}
+
+/* Custom utility class for text balance */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance; /* Apply balanced text wrapping */
+  }
+}
+
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Add padding */
+  background-color: #f9f9f9; /* Light background color */
+  min-height: 100vh; /* Ensure it takes full height */
+  color: #333; /* Text color */
+}
+
+.home-container h1 {
+  font-size: 36px; /* Heading size */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.home-container p {
+  font-size: 18px; /* Paragraph size */
+  margin: 5px 0; /* Margin between paragraphs */
+  text-align: center; /* Center align text */
+}
+
+
+
+/* Navbar styles */
+.navbar {
+  background-color: #22f1ac; /* Navbar background color */
+  list-style-type: none; /* Remove bullets from list */
+  display: flex; /* Align items in a row */
+  justify-content: space-around; /* Space items evenly */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Navbar item styles */
+.navbar li {
+  margin-right: 20px; /* Space between items */
+}
+
+/* Remove margin on the last navbar item */
+.navbar li:last-child {
+  margin-right: 0; /* No margin on the last item */
+}
+
+/* Navbar link styles */
+.navbar a {
+  text-decoration: none; /* Remove underline from links */
+  color: #6d0960; /* Link color */
+  font-weight: bold; /* Make links bold */
+  font-size: 30px; /* Increase font size */
+}
+
+/* Navbar link hover effect */
+.navbar a:hover {
+  color: #0070f3; /* Change color on hover */
+}
+
+
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Add padding */
+  background-color: #f9f9f9; /* Light background color */
+  min-height: 100vh; /* Ensure it takes full height */
+}
+
+.about-content {
+  max-width: 800px; /* Max width for the content */
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Space above the content */
+}
+
+.about-content h1 {
+  font-size: 36px; /* Heading size */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.about-content p {
+  font-size: 18px; /* Paragraph size */
+  color: #555; /* Text color */
+}
+
+
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Add padding */
+  background-color: #f9f9f9; /* Light background color */
+  min-height: 100vh; /* Ensure it takes full height */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width */
+  max-width: 400px; /* Limit form width */
+  margin-top: 20px; /* Space above the form */
+}
+
+.contact-form label {
+  margin-bottom: 5px; /* Space below labels */
+  font-weight: bold; /* Make labels bold */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px; /* Add padding inside inputs */
+  margin-bottom: 15px; /* Space below inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Input text size */
+}
+
+.contact-form button {
+  padding: 10px; /* Add padding */
+  background-color: #22f1ac; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 16px; /* Button text size */
+}
+
+.contact-form button:hover {
+  background-color: #1abc9c; /* Darker color on hover */
+}
+
+
+
+
+
+.footer {
+  background-color: #22f1ac; /* Footer background color */
+  color: #333; /* Text color */
+  padding: 20px; /* Padding for the footer */
+  text-align: center; /* Center the text */
+  position: fixed; /* Keep it at the bottom */
+  left: 0;
+  right: 0;
+  bottom: 0; /* Align to the bottom */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.footer-content {
+  max-width: 1200px; /* Max width for the content */
+  margin: auto; /* Center the content */
+}
+
+.footer h1 {
+  font-size: 24px; /* Footer title size */
+  margin: 0; /* Remove default margin */
+}
+
+.footer p {
+  margin: 5px 0 0; /* Margin for the paragraph */
+  font-size: 14px; /* Smaller text size */
+}
+
